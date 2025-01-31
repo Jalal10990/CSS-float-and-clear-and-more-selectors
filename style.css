@@ -1,0 +1,57 @@
+img{
+    float: left;
+}
+.cards{
+    border: 2px solid black;
+    /* for adjusting pic in container we use andother method is margin used and overflow auto */
+    display: flow-root;
+}
+.card{
+    border: 2px solid rgb(255, 4, 4);
+}
+.card:nth-child(3){
+    background-color: aqua;
+    clear: both;
+}
+/* .box:first-child{
+    background-color:greenyellow ;
+
+} */
+ /* .box::first-line{
+    color: blue;
+ } */
+  .boxes *{
+    color: blue;
+    border: 2px solid red;
+  }
+  [data-color="primary"]{
+    /* margin-top: 45px; */
+    padding-top: 45px;
+  }
+  .box:nth-child(odd){
+    background-color: yellowgreen;
+  }
+  /* .box:nth-last-child(2){
+    background-color: yellowgreen;
+  } */
+   /* before and after  */
+   .boxes::before{
+    content: "Jalal";
+   }
+   .boxes::after{
+    content: "Super";
+    color: blueviolet;
+   }
+   ::selection{
+    color: yellow;
+    background-color: black;
+   }
+   .box::first-letter{
+    color: orangered;
+    font-size: 45px;
+   }
+   input::placeholder{
+    color: crimson;
+   }
+
+ 
